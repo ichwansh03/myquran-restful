@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -13,17 +14,21 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-        buildConfigField("String","BASE_URL_CHAPTER","\"https://api.quran.com/api/v4/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
+            buildConfigField("String","BASE_URL_CHAPTER","\"https://api.quran.com/api/v4/\"")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            buildConfigField("String","BASE_URL_CHAPTER","\"https://api.quran.com/api/v4/\"")
+            isDebuggable = true
         }
     }
     compileOptions {
