@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QuranAPI</string>
+    <string name="chapter_name">Chapter Name</string>
+    <string name="makkiyyah">Makkiyyah</string>
+    <string name="the_opening">The Opening</string>
+    <string name="_7_verse">7 Verse</string>
+    <string name="order_to_1">Order to 1</string>
+    <string name="search_chapter">Search Chapter</string>
 </resources>
