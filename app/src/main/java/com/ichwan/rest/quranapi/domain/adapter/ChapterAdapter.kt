@@ -5,9 +5,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ichwan.rest.quranapi.databinding.ListChapterBinding
+import com.ichwan.rest.quranapi.models.ChapterResponse
 import com.ichwan.rest.quranapi.models.ChaptersItem
 
-class ChapterAdapter(private val list: ArrayList<ChaptersItem>): RecyclerView.Adapter<ChapterAdapter.ViewHolder>() {
+class ChapterAdapter: RecyclerView.Adapter<ChapterAdapter.ViewHolder>() {
+
+    private val list = ArrayList<ChaptersItem>()
+
     inner class ViewHolder (var binding: ListChapterBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,4 +36,10 @@ class ChapterAdapter(private val list: ArrayList<ChaptersItem>): RecyclerView.Ad
     }
 
     override fun getItemCount(): Int = list.size
+
+    fun setChapter(list: List<ChaptersItem>){
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+    }
 }
