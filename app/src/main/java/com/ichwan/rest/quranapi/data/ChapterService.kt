@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface ChapterService {
 
-    @GET("chapter")
+    @GET("chapters")
     suspend fun getChapters(
         @Query("language") language: String?
     ): Response<ChapterResponse>
