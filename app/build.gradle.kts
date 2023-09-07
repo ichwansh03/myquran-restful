@@ -20,6 +20,7 @@ android {
     buildTypes {
         release {
             buildConfigField("String","BASE_URL_CHAPTER","\"https://api.quran.com/api/v4/\"")
+            buildConfigField("String","BASE_URL_TAFSIR","\"https://equran.id/api/v2/\"")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -28,6 +29,7 @@ android {
         }
         debug {
             buildConfigField("String","BASE_URL_CHAPTER","\"https://api.quran.com/api/v4/\"")
+            buildConfigField("String","BASE_URL_TAFSIR","\"https://equran.id/api/v2/\"")
             isDebuggable = true
         }
     }
