@@ -8,5 +8,5 @@ import com.google.gson.annotations.SerializedName
 data class ChapterResponse(
 
 	@field:SerializedName("chapters")
-	val chapters: List<ChaptersItem?>? = null
+	val chapters: MutableList<ChaptersItem>
 ) : Parcelable
