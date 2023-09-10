@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816213575748",
+    "project_id": "quranapi-1291d",
+    "storage_bucket": "quranapi-1291d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816213575748:android:5928aced3769009cf6d411",
+        "android_client_info": {
+          "package_name": "com.ichwan.rest.quranapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816213575748-4n2qb049pt0p3kgt5u56u43efo66hv22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9mJzbm8O-kD8EBQS0690PydO-ebEzvL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816213575748-4n2qb049pt0p3kgt5u56u43efo66hv22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
